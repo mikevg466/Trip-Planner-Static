@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha tests",
     "start": "nodemon app.js",
-    "build-css": "node-sass -w assets/stylesheets/tripStyles.scss -o public/stylesheets"
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
   },
   "keywords": [],
   "author": "",

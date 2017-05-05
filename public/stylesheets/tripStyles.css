@@ -1,0 +1,60 @@
+#navbar {
+  background-color: #96886f;
+  padding: 1%; }
+  #navbar a {
+    text-decoration: none;
+    color: #add2f3; }
+  #navbar h3, #navbar ul {
+    display: inline; }
+  #navbar li {
+    font-size: 1.4em;
+    list-style-type: none;
+    display: inline;
+    margin: 0 1%; }
+
+#panel {
+  background: #c3beb4; }
+
+#selectors {
+  padding: 4%;
+  background-color: #efeeee;
+  border-radius: 5%;
+  margin: 5% 1%; }
+
+select {
+  -webkit-appearance: menulist-button;
+  background-color: white;
+  border-radius: 5%; }
+
+input {
+  display: inline;
+  border-width: 0;
+  border-radius: 50%;
+  margin: 0 .5% 0 5%;
+  background-color: blue;
+  color: white; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+  body #content {
+    height: 100%; }
+    body #content #map {
+      height: 100%; }
+    body #content #panel {
+      height: 100%; }
+
+#day-selector {
+  background-color: #96886f;
+  height: 15%; }
+
+#itinerary {
+  background-color: #efeeee;
+  border-radius: 5%;
+  margin: 5% 1%;
+  height: 50%; }
+  #itinerary .items {
+    height: 85%;
+    margin: 3% 0; }

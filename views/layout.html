@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <link href="/stylesheets/tripStyles.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwp7yh2BTnrYts408UukxhwDU1ZPuxJAQ&sensor=true"></script>
+    <script src="/scripts/map.js"></script>
   </head>
   <body>
-    <div>
-      <h1>HELLO WORLD!</h1>
+    <div id='navbar' class='col-lg-12 col-md-12 col-sm-12'>
+      <h3><a href="/">Trip Planner</a></h3>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
     </div>
-    <div>
-    {% block content %}{% endblock %}
+    <div id='content' class='col-lg-12 col-md-12 col-sm-12'>
+      <div id='map' class='col-lg-9 col-md-9 col-sm-12'>
+      </div>
+      <div id='panel' class='col-lg-3 col-md-3 col-sm-12'>
+        <div id='selectors'>
+          {% block content %}{% endblock %}
+        </div>
+        <div id='day' class='col-lg-12 col-md-12 col-sm-12'>
+          <h2>Day </h2>
+        </div>
+        <div id='itinerary' class='col-lg-12 col-md-12 col-sm-12'>
+          <div id='day-selector' class='col-lg-12 col-md-12 col-sm-12'>
+          </div>
+          <div id='day-display' class='col-lg-12 col-md-12 col-sm-12'>
+            <div class="items">
+              <h3>My Hotel</h3>
+            </div>
+            <div class="items">
+              <h3>My Restaurants</h3>
+            </div>
+            <div class="items">
+              <h3>My Activities</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </body>

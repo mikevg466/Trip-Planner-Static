@@ -3,24 +3,27 @@
 {% block content %}
 
 <h3>Hotels</h3>
-<select>
+<select class='col-lg-10 col-md-10 col-sm-10'>
   {% for hotel in hotels %}
   <option value="{{hotel.name}}">{{hotel.name}}</option>
   {% endfor %}
+  <input type="submit" value="+">
 </select>
 
  <h3>Activities</h3>
-<select>
+<select class='col-lg-10 col-md-10 col-sm-10'>
   {% for activity in activities %}
   <option value="{{activity.name}}">{{activity.name}}</option>
   {% endfor %}
+  <input type="submit" value="+">
 </select>
 
 <h3>Restaurants</h3>
-<select>
+<select class='col-lg-10 col-md-10 col-sm-10'>
   {% for restaurant in restaurants %}
   <option value="{{restaurant.name}}">{{restaurant.name}}</option>
   {% endfor %}
+  <input type="submit" value="+">
 </select>
 
 {% endblock %}
